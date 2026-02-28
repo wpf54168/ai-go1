@@ -22,6 +22,7 @@ import {
   Briefcase
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 import { AI_TOOLS, AITool } from './constants';
 
 type ViewMode = 'company' | 'modelType' | 'function';
@@ -425,6 +426,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
