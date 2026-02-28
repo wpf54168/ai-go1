@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { AI_TOOLS, AITool } from './constants';
+import { Analytics } from '@vercel/analytics/react';
 
 type ViewMode = 'company' | 'modelType' | 'function';
 
@@ -425,6 +426,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
